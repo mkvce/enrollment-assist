@@ -28,6 +28,7 @@ public class PresentationScheduleTest {
         Assertions.assertFalse(presentationSchedule.hasConflict(otherPresentationSchedule));
     }
 
+    @Test
     public void ScheduleEndsBeforeAnotherHasNotConflict() throws ExceptionList {
         PresentationSchedule otherPresentationSchedule = new PresentationSchedule(defaultDay,
                 "07:00", "09:00");
