@@ -16,7 +16,7 @@ import org.junit.runners.Parameterized;
 import java.util.*;
 
 @RunWith(Parameterized.class)
-public class EnrollmentListTest {
+public class checkEnrollmentRulesTest {
     private EnrollmentList enrollmentList;
     private final int expectedViolationsCount;
     private List<EnrollmentRuleViolation> expectedViolations;
@@ -37,7 +37,7 @@ public class EnrollmentListTest {
     private static Section english_1, farsi_1, history_1, sport_1;
     private static Section ap_1, dm_1, os_1, internship_1;
 
-    public EnrollmentListTest(EnrollmentList enrollmentList, int expectedViolationsSize, List<EnrollmentRuleViolation> expectedViolations) {
+    public checkEnrollmentRulesTest(EnrollmentList enrollmentList, int expectedViolationsSize, List<EnrollmentRuleViolation> expectedViolations) {
         this.enrollmentList = enrollmentList;
         this.expectedViolationsCount = expectedViolationsSize;
         this.expectedViolations = expectedViolations;
